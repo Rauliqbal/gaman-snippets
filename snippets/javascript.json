@@ -31,5 +31,29 @@
       "});"
     ],
     "description": "Membuat controller gaman"
+  },
+  "Compose Middleware": {
+    "prefix": "cm",
+    "body": [
+      "import { composeMiddleware } from \"@gaman/core\";",
+      "",
+      "export default composeMiddleware((ctx, next) => {",
+      "  $1",
+      "  return next();",
+      "});"
+    ],
+    "description": "composeMiddleware tidak otomatis di register ke data middleware jadi anda harus set manual ke index.ts atau ke spesifik routes"
+  },
+  "Auto Compose Middleware": {
+    "prefix": "acm",
+    "body": [
+      "import { autoComposeMiddleware } from \"@gaman/core\";",
+      "",
+      "export default autoComposeMiddleware((ctx, next) => {",
+      "  $1",
+      "  return next();",
+      "});"
+    ],
+    "description": "autoComposeMiddleware middleware otomatis ke register ke data middleware"
   }
 }
