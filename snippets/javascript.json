@@ -26,9 +26,9 @@
     "body": [
       "import { composeController } from \"@gaman/core\";",
       "",
-      "export default composeController(() => {",
+      "export default composeController(() => ({",
       "  $1",
-      "});"
+      "}));"
     ],
     "description": "Membuat controller gaman"
   },
