@@ -1,21 +1,47 @@
+<div align="center">
+<img src="images/icon.png"/>
+</div>
+
 # Gaman Snippets
 
-🚀 Kumpulan snippet sederhana untuk mempercepat workflow JavaScript & TypeScript, khususnya dengan `@gaman/core`.
-
-![Gaman Snippets](images/icon.png)
+🚀 Kumpulan snippet sederhana untuk mempercepat lu ngoding Gaman Framework.
 
 ---
 
 ## ✨ Snippet yang tersedia
 
-### 📌 composeRoutes
+### composeRoutes
 
-Ketik `composeRoutes` → menghasilkan:
+Ketik `cr` → menghasilkan:
 
 ```ts
 import { composeRoutes } from "@gaman/core";
 
 export default composeRoutes((route) => {
-  // tulis disini
+  |
 });
+```
+
+### autoComposeRoutes
+
+Ketik `acr` → menghasilkan:
+
+```ts
+import { autoComposeRoutes } from "@gaman/core";
+
+export default autoComposeRoutes((route) => {
+  |
+});
+```
+
+### Controller
+
+Ketik `cc` → menghasilkan:
+
+```ts
+import { composeController } from "@gaman/core";
+
+export default composeController(() => ({
+  |
+}));
 ```
