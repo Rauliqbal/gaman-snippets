@@ -1,0 +1,31 @@
+{
+  "name": "gaman-snippets",
+  "version": "1.0.0",
+  "author": "Rauliqbal",
+  "publisher": "rauliqbal",
+  "license": "MIT",
+  "description": "Gaman Snipper for your life",
+  "categories": ["Snippets"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rauliqbal/gaman-snippets"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  }
+}

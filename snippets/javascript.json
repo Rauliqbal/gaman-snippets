@@ -1,0 +1,35 @@
+{
+  "Compose Routes": {
+    "prefix": "cr",
+    "body": [
+      "import { composeRoutes } from \"@gaman/core\";",
+      "",
+      "export default composeRoutes((route) => {",
+      "  $1",
+      "});"
+    ],
+    "description": "composeRoutes tidak otomatis di register ke data routes jadi anda harus set manual ke index.ts"
+  },
+  "Auto Compose Routes": {
+    "prefix": "acr",
+    "body": [
+      "import { autoComposeRoutes } from \"@gaman/core\";",
+      "",
+      "export default autoComposeRoutes((route) => {",
+      "  $1",
+      "});"
+    ],
+    "description": "autoComposeRoutes routes otomatis ke register ke data routes"
+  },
+  "Compose Controller": {
+    "prefix": "cc",
+    "body": [
+      "import { composeController } from \"@gaman/core\";",
+      "",
+      "export default composeController(() => {",
+      "  $1",
+      "});"
+    ],
+    "description": "Membuat controller gaman"
+  }
+}
