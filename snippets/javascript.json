@@ -1,6 +1,6 @@
 {
   "Compose Routes": {
-    "prefix": "cr",
+    "prefix": "gcr",
     "body": [
       "import { composeRoutes } from \"@gaman/core\";",
       "",
@@ -11,7 +11,7 @@
     "description": "composeRoutes tidak otomatis di register ke data routes jadi anda harus set manual ke index.ts"
   },
   "Auto Compose Routes": {
-    "prefix": "acr",
+    "prefix": "gacr",
     "body": [
       "import { autoComposeRoutes } from \"@gaman/core\";",
       "",
@@ -22,7 +22,7 @@
     "description": "autoComposeRoutes routes otomatis ke register ke data routes"
   },
   "Compose Controller": {
-    "prefix": "cc",
+    "prefix": "gcc",
     "body": [
       "import { composeController } from \"@gaman/core\";",
       "",
@@ -33,7 +33,7 @@
     "description": "Membuat controller gaman"
   },
   "Compose Middleware": {
-    "prefix": "cm",
+    "prefix": "gcm",
     "body": [
       "import { composeMiddleware } from \"@gaman/core\";",
       "",
@@ -45,7 +45,7 @@
     "description": "composeMiddleware tidak otomatis di register ke data middleware jadi anda harus set manual ke index.ts atau ke spesifik routes"
   },
   "Auto Compose Middleware": {
-    "prefix": "acm",
+    "prefix": "gacm",
     "body": [
       "import { autoComposeMiddleware } from \"@gaman/core\";",
       "",
@@ -55,5 +55,16 @@
       "});"
     ],
     "description": "autoComposeMiddleware middleware otomatis ke register ke data middleware"
+  },
+  "Compose Service": {
+    "prefix": "gcs",
+    "body": [
+      "import { composeService } from \"@gaman/core\";",
+      "",
+      "export const ${TM_FILENAME_BASE} = composeService(($1) => ({",
+      " $2",
+      "}));"
+    ],
+    "description": "composeService is a utility function for creating application controllers."
   }
 }
