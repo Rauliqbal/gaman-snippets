@@ -1,7 +1,7 @@
 {
   "name": "gaman-snippets",
   "displayName": "Gaman JS Snippets",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "author": "Rauliqbal",
   "publisher": "rauliqbal",
   "keywords": [
@@ -9,10 +9,18 @@
     "snippets",
     "backend",
     "javascript",
-    "typescript"],
+    "typescript"
+  ],
   "license": "MIT",
   "description": "Extension for Gaman JS, to make your life easier",
-  "categories": ["Snippets","Formatters","Language Packs","AI","Debuggers","Other"],
+  "categories": [
+    "Snippets",
+    "Formatters",
+    "Language Packs",
+    "AI",
+    "Debuggers",
+    "Other"
+  ],
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
@@ -21,7 +29,7 @@
   "engines": {
     "vscode": "^1.50.0"
   },
-    "contributes": {
+  "contributes": {
     "snippets": [
       {
         "language": "javascript",
