@@ -62,8 +62,12 @@
       "import { composeService } from \"@gaman/core\";",
       "",
       "export const ${TM_FILENAME_BASE} = composeService(($1) => ({",
-      " $2",
-      "}));"
+      "  HelloWorld(): string {",
+      "    return \"$2\";",
+      "  },",
+      "}));",
+      "",
+      "export type ${TM_FILENAME_BASE}Type = ReturnType<typeof ${TM_FILENAME_BASE}>;"
     ],
     "description": "composeService is a utility function for creating application controllers."
   }
